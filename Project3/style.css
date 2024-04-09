@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.img-style{
+  @apply w-full hover:filter hover:grayscale-0 hover:cursor-pointer hover:transform hover:scale-110 filter grayscale-[100%] transition-all duration-150;
+}

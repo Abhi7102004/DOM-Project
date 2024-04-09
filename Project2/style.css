@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+  @apply bg-white border-2 border-[#222] rounded-lg py-2 my-3 w-full cursor-pointer text-left px-4 hover:bg-[#222] hover:text-white transition-all duration-300;
+}
+.correct{
+  @apply bg-[#96f2b3]
+}
+.incorrect{
+  @apply bg-[#d65151];
+}

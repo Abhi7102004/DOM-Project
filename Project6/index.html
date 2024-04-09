@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#94e1e6]">
+  <div class="container h-[100vh] flex items-center justify-center pr-[250px]">
+    <div class="max-w-[750px] w-full flex">
+      <div class="basis-[47%] relative transform scale-110 shadow-[-10px_5px_10px_10px_rgba(255,255,255,0.1)] ">
+        <img id="product-img" class="block w-full pt-[100px] bg-gray-800 " src="images/image1.png" alt="">
+        <div class=" controls absolute right-5 bottom-3">
+          <span class="btn active"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+        </div>
+      </div>
+      <div class="py-9 font-sans pr-10 pl-[65px] basis-[53%] bg-white">
+        <h1 class="font-bold text-[40px] ">Casual T Shirts</h1>
+        <h2 id="price" class="font-semibold mb-1 text-[30px] text-gray-500">$15.00</h2>
+        <h3 class="font-semibold mb-3 text-[17px]  text-[#f55858]">30% OFF</h3>
+        <p class="text-[14px] font-medium text-[#656363]">The classic crew-neck t-shirt is made from soft cotton
+          fabric,offering comfort and versatility for everyday wear</p>
+        <form class="mt-7" action="">
+          <div class="size-select flex items-center">
+            <p class="w-[70px]">Size</p>
+            <label for="small">
+              <input type="radio" name="size" id="small">
+              <span>S</span>
+            </label>
+            <label for="medium">
+              <input type="radio" name="size" id="medium">
+              <span>M</span>
+            </label>
+            <label for="large">
+              <input type="radio" name="size" id="large">
+              <span>L</span>
+            </label>
+            <label for="x-large">
+              <input type="radio" name="size" id="x-large">
+              <span>XL</span>
+            </label>
+            <label for="xx-large">
+              <input type="radio" name="size" id="xx-large">
+              <span>XXL</span>
+            </label>
+          </div>
+          <div class="col-select flex mt-5 items-center">
+            <p class="w-[75px]">Color</p>
+            <label for="red">
+              <input type="radio" name="color" id="red">
+              <span class="bg-red-600"></span>
+            </label>
+            <label for="blue">
+              <input type="radio" name="color" id="blue">
+              <span class="bg-blue-700"></span>
+            </label>
+            <label for="green">
+              <input type="radio" name="color" id="green">
+              <span class="bg-green-600"></span>
+            </label>
+            <label for="pink">
+              <input type="radio" name="color" id="pink">
+              <span class="bg-pink-600"></span>
+            </label>
+          </div>
+          <div class="flex mt-5 items-center">
+            <p class="w-[75px]">Quantity</p>
+            <input class="bg-none outline-none border border-gray-600 p-[2px_2px_2px_15px] w-[50px] rounded-lg" type="number" value="1">
+          </div>
+          <button id="Buy-btn" class="w-full cursor-pointer shadow-[0px_10px_10px_rbga(85,63,340,0.25)] border-0 outline-0 bg-blue-700 rounded-3xl mt-10 py-[10px] text-lg">Buy Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

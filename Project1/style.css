@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .pointer {
+    cursor: pointer;
+  }
+}
+
+.input-box{
+  @apply  rounded-lg bg-white  p-3 mt-10 w-[500px] relative h-[150px] overflow-y-auto outline-none;
+}
+.delete-img{
+  @apply absolute right-1 bottom-1 w-7 pointer;
+}

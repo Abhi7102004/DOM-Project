@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  
+  <script type="module" crossorigin src="/assets/index-CbfJcE1u.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CpSa07IF.css">
+</head>
+<body class="font-semibold bg-gradient-to-br from-blue-300 via-indigo-900 to-blue-300">
+    <div class="container w-full h-[100vh] flex items-center justify-center">
+      <form action="" class="bg-white w-full max-w-[700px] shadow-2xl shadow-blue-300 rounded-md px-6 py-5 relative">
+        <i class="absolute top-0 left-1/2 tranform -translate-x-1/2 -translate-y-1/2 bg-white rounded-[50%] p-[12px] text-2xl shadow-md shadow-black "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
+          <path d="M3.105 2.288a.75.75 0 0 0-.826.95l1.414 4.926A1.5 1.5 0 0 0 5.135 9.25h6.115a.75.75 0 0 1 0 1.5H5.135a1.5 1.5 0 0 0-1.442 1.086l-1.414 4.926a.75.75 0 0 0 .826.95 28.897 28.897 0 0 0 15.293-7.155.75.75 0 0 0 0-1.114A28.897 28.897 0 0 0 3.105 2.288Z" />
+        </svg>        
+        </i>
+        <div class="input-group pt-3">
+          <label class="basis-[28%]">Full Name</label>
+          <input type="text" placeholder="Enter Your Name" id="contact-name" >
+          <span id="name-error"></span>
+        </div>
+        <div class="input-group">
+          <label class="basis-[28%]">Contact No.</label>
+          <input type="tel" placeholder="123 456 7890" id="contact-phone">
+          <span id="phone-error"></span>
+        </div>
+        <div class="input-group">
+          <label class="basis-[28%]" >Email Id</label>
+          <input type="email" placeholder="Enter Email" id="contact-email">
+          <span id="email-error"></span>
+        </div>
+        <div class="input-group">
+          <label class="basis-[28%]">Your Message</label>
+          <textarea rows="5" placeholder="Enter your message" id="contact-message"></textarea>
+          <span id="message-error"></span>
+        </div>
+        <input type="submit" id="submit" class="bg-indigo-800 text-white rounded-lg px-7 py-3 outline-0 cursor-pointer block border-[#FFFFFF] mx-auto mt-6 mb-2 "></input>
+        <span id="submit-error" class="text-red-600 font-sans text-md"></span>
+      </form>
+    </div>
+</body>
+</html>

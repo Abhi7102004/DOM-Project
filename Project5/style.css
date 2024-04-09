@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .border-b-1 {
+    border-bottom-width: 1px;
+  }
+}
+.input-group{
+  @apply w-full items-center flex relative my-[5px] mx-0 ;
+}
+.place{
+  @apply text-[15px];
+}
+.input-group input,.input-group textarea {
+  @apply outline-0 bg-transparent text-[#333] border-0 py-3 px-0 basis-[68%] text-[16px] border-b-1 border-[#999] 
+}
+.input-group span{
+  @apply absolute right-5 text-sm text-red-600 bottom-[14px]
+}
